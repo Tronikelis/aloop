@@ -26,5 +26,8 @@
     "author": "Tronikel",
     "devDependencies": {
         "@types/node": "^16.7.1"
+    },
+    "dependencies": {
+        "setimmediate.js": "^1.0.1"
     }
 }
