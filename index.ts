@@ -4,8 +4,13 @@ export default function (
     fn: (i: number) => void,
 ) {
     return new Promise<void>((resolve, reject) => {
+        // some safety checks
         if (!Number.isInteger(start + stop)) {
             reject("Integers only!");
+            return;
+        };
+        if (start > stop) {
+            reject("Starting number must be bigger!");
             return;
         };
 

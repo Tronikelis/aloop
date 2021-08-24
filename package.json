@@ -1,12 +1,29 @@
 {
     "name": "aloop",
+    "description": "Finally, tiny & async for loop in js",
     "version": "1.0.0",
-    "main": "index.js",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "prepublish": "tsc",
+    "keywords": [
+        "async loop",
+        "async looping",
+        "async",
+        "for loop async"
+    ],
     "license": "MIT",
     "scripts": {
-        "start": "ts-node test.ts"
+        "test": "ts-node test.ts",
+        "build": "tsc"
     },
-    "dependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Trunkelis/aloop.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Trunkelis/aloop/issues"
+    },
+    "author": "Tronikel",
     "devDependencies": {
         "@types/node": "^16.7.1"
     }

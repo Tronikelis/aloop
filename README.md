@@ -1,7 +1,8 @@
-import aloop from "./index";
+# Aloop
 
-console.log("Starting");
+## Finally, tiny & async for looping in js
 
+```ts
 (async () => {
     const million = 1000000;
 
@@ -35,3 +36,4 @@ console.log("Starting");
     // We're finished 1499998500000
 
 })();
+```
