@@ -1,6 +1,6 @@
 {
     "name": "aloop",
-    "description": "Finally, tiny & async for loop in js",
+    "description": "Tiny & async for loop in js",
     "version": "1.0.0",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
