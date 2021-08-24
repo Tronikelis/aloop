@@ -1,6 +1,6 @@
 # Aloop
 
-## Tiny & async for looping in js
+## Tiny & async for looping in node.js
 
 ```ts
 (async () => {

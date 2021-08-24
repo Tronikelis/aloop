@@ -1,5 +1,3 @@
-require("setimmediate.js");
-
 export default function (
     start: number,
     stop: number,

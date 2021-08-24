@@ -1,7 +1,7 @@
 {
     "name": "aloop",
-    "description": "Tiny & async for loop in js",
-    "version": "1.0.2",
+    "description": "Tiny & async for loop in node.js",
+    "version": "1.0.3",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "prepublish": "tsc",
@@ -27,7 +27,5 @@
     "devDependencies": {
         "@types/node": "^16.7.1"
     },
-    "dependencies": {
-        "setimmediate.js": "^1.0.1"
-    }
+    "dependencies": {}
 }
