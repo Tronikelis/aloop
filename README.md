@@ -1,7 +1,7 @@
 # A(sync)loop - Tiny, async looping in javascript
 
 ## Motivation
-Have you ever written a back/front end function that needs to iterate over a large array, but you don't want to block the event loop?
+Have you ever wanted to write a back/front end function that needs to iterate over a large array, but you don't want to block the event loop?
 
 Now you can:
 
