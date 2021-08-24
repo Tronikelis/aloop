@@ -8,17 +8,21 @@ console.log("Starting");
     let count = 0;
 
     // we can use await here also !
-    aloop(0, million, (i) => {
+    const first = aloop(0, million, i => {
         count += i;
-    }).then(() => console.log("1 finish", count));
+    }).then(() => console.log("1 finish"));
 
-    aloop(0, million, (i) => {
+    const second = aloop(0, million, i => {
         count += i;
-    }).then(() => console.log("2 finish", count));
+    }).then(() => console.log("2 finish"));
 
-    aloop(0, million, (i) => {
+    const third = aloop(0, million, i => {
         count += i;
-    }).then(() => console.log("3 finish", count));
+    }).then(() => console.log("3 finish"));
+
+    Promise.allSettled([first, second, third]).then(() => {
+        console.log("We're finished", count);
+    });
 
     console.log("I got called first !!! 🤯");
 

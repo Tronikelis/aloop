@@ -4,12 +4,17 @@ export default function (
     fn: (i: number) => void,
 ) {
     return new Promise<void>((resolve, reject) => {
+        if (!Number.isInteger(start + stop)) {
+            reject("Integers only!");
+            return;
+        };
+
         // try catch for safety
         try {
             // initiate the counter
             let count = start;
             const tick = () => {
-                process.nextTick(() => {
+                setImmediate(() => {
                     // callback
                     fn(count);
                     count++;
