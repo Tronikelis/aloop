@@ -1,0 +1,13 @@
+{
+    "name": "aloop",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "start": "ts-node test.ts"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "@types/node": "^16.7.1"
+    }
+}
