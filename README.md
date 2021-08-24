@@ -1,6 +1,35 @@
-# Aloop
+# A(sync)loop, Tiny, async looping in javascript
 
-## Tiny & async for looping in node.js
+## Motivation
+Have you ever written a back/front end function that needs to iterate over a large array, but you don't want to block the event loop?
+
+Now you can:
+
+## How to use
+
+```ts
+import aloop from "aloop";
+
+async function foo() {
+    // returns a Promise
+    await aloop(
+        // starting number
+        0,
+        // when to end, number,
+        1000,
+        // callback for each iteration with the count as param
+        i => console.log(i)
+    );
+
+    // e.g loop a 1000 times 
+    // and console log the current count
+    aloop(0, 1000, (i) => {
+        console.log(i);
+    });
+};
+```
+
+## Tests
 
 ```ts
 (async () => {

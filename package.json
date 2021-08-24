@@ -1,7 +1,7 @@
 {
     "name": "aloop",
-    "description": "Tiny & async for loop in node.js",
-    "version": "1.0.3",
+    "description": "Tiny & async looping in javascript",
+    "version": "1.0.4",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "prepublish": "tsc",
